@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Science Club</title>
+
+    <!-- ICONSCOUT CDN -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v2.1.6/css/unicons.css">
+
+    <!-- Google Fonts (Montserrat) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&family=Syne&family=Work+Sans:wght@600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./css/style.css">
+
+    <!-- SWIPER JS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+
+    <style>
+        .courses{
+            margin-top: 1rem;
+        }
+    </style>
+
+    <style>
+        body{ background-image: url("./images/bg-texture.png"); }
+    </style>
+
+</head>
+<body>
+    <nav>
+        <div class="container nav__container">
+            <a href="index.html"><h4>Data Science Club</h4></a>
+            <ul class="nav__menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="courses.html">Workshops</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <button id="open-menu-btn"><i class="uil uil-bars"></i></button>
+
+            <button id="close-menu-btn"><i class="uil uil-multiply"></i></button>
+        </div>
+    </nav>
+    <!-- END OF NAVBAR -->
+
+    <section class="courses">
+        <h2>Our Popular Workshops</h2>
+        <div class="container courses__container">
+            <article class="course">
+                <div class="course__image">
+                    <img src="./images/comingsoon.jpg">
+                </div>
+                <div class="course__info">
+                    <h4>Learning About AI & ML Algorithms</h4>
+                    <p>
+                        In this workshop we will be going over Algorithms such as Linear Regression, Naive-Bayes, Random Forest, and many more. We will also be teaching you have to analyze data and draw patterns from it.
+                    </p>
+                    <a href="courses.html" class="btn btn-primary">Learn More</a>
+                </div>
+                
+            </article>
+
+            <article class="course">
+                <div class="course__image">
+                    <img src="./images/comingsoon.jpg">
+                </div> 
+                <div class="course__info">
+                    <h4>AP Statistics Workshops / Review</h4>
+                    <p>
+                        We will go over all the AP statistics curriculum starting from mean, median, mode to chi-squared tests. If you are self-studying AP Stats, this is will help you immensely.
+                    </p>
+                    <a href="courses.html" class="btn btn-primary">Learn More</a>
+                </div>
+            </article>
+
+            <article class="course">
+                <div class="course__image">
+                    <img src="./images/comingsoon.jpg">
+                </div>
+                <div class="course__info">
+                    <h4>AI & ML Libraries Workshop</h4>
+                    <p>
+                        We will go over data science tools such as Tableau, SK Learn, and more. By understanding these libraries, you will actually be able to draw insightful conclusions from large pieces of data.
+                    </p>
+                    <a href="courses.html" class="btn btn-primary">Learn More</a>
+                </div>
+                
+            </article>
+        </div>
+    </section>
+    <!-- END OF COURSES -->
+
+
+    <footer>
+        <div class="container footer__container">
+            <div class="footer__1">
+                <a href="index.html" class="footer__logo"><h4>Data Science Club</h4></a>
+                <p>
+                    We aim to provide students at Irvington the skills, guidance, and experience of working with data that they need in order to succeed in secondary education and the job market in a world that values data.
+                </p>
+            </div>
+
+            <div class="footer__2">
+                <h4>Permalinks</h4>
+                <ul class="permalinks">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="courses.html">Courses</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="footer__3">
+                <h4>Privacy</h4>
+                <ul class="privacy">
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms and Conditions</a></li>
+                    <li><a href="#">Refund Policy</a></li>
+                </ul>
+            </div>
+
+            <div class="footer__4">
+                <h4>Contact Us</h4>
+                <div>
+                    <p>@ihs_data_science</p>
+                    <p>ihsdatascience@gmail.com</p>
+                </div>
+                
+                <ul class="footer__socials">
+                    <li>
+                        <a href="https://www.facebook.com/groups/1233249840534706"><i class="uil uil-facebook-f"></i></a>
+                    </li>
+                    <li>
+                        <a href="https://www.instagram.com/ihs_data_science/"><i class="uil uil-instagram-alt"></i></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="uil uil-twitter"></i></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="uil uil-linkedin-alt"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer__copyright">
+            <small>Copyright &copy; Data Science Club 2023</small>
+        </div>
+    </footer>
+
+<!-- END OF FOOTER -->
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="./main.js"></script>
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 1,
+            spaceBetween: 30,
+            pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+            },
+
+            //when window width is >= 600px
+            breakpoints: {
+                600: {
+                    slidesPerView: 2
+                }
+            }
+        });
+    </script>
+
+</body>
+</html>
